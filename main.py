@@ -183,5 +183,15 @@ with open(pkl_filename, 'rb') as file:
     pickle_model = pickle.load(file)
 
 #rent
-estimate_rent = pickle_model.predict(inp)[0]
-print(estimate_rent)
+
+
+
+if st.button('Make Prediction'):
+    estimate_rent = pickle_model.predict(inp)[0]
+    print(estimate_rent)
+    st.write(f"Your estimated rent is: {(estimate_rent} dollars")
+
+
+
+
+
