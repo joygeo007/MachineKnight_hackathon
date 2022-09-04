@@ -107,7 +107,7 @@ df_new.columns = ['type',
  'balconies']
 
 #type
-type_dict = {'1RK':0,'1BHK':1,'2BHK':2,'3BHK':3,'4BHK':4,'BHK4PLUS':5}
+type_dict = {'1RK':0,'1BHK':1,'2BHK':2,'3BHK':3,'4BHK':4,'BHK4plus':5}
 df_new['type'] = type_dict[type_sel]
 
 
