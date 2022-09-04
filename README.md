@@ -19,3 +19,9 @@
 4. We started with the linear regression model initially, which was followed by Ridge and Lasso
 5. After this, we used Gradient Boosting Regressor and Support Vector Regressor
 6. This was followed by Random Forest Regressor and Decision Tree
+7. For calculating the optimal score of a specific model, 
+8. We found out that decision tree regressor and random forest regressor were giving the most optimal score
+9. We also deduced that decision tree regressor was getting overfitted. 
+10. We first tried to postrun the Decision Tree. Then we used RandomizedSearchCV, for a specific range of parameters, to find the best optimal score
+11. We did the same thing with Random Forest Regressor. Then we got a specific range of parameters, which is giving us the best possible score for a model till now.
+12. We used GridSearchCV on the range of the specific parameters and found out that the best suitable parameters that gave us the best possible model score
