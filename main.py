@@ -178,7 +178,7 @@ with open('std_scaler.bin', 'rb') as file:
 
 inp = scaler.transform(df_new.values)
 
-pkl_filename = "pickle_model.pkl"
+pkl_filename = "pickle_model (1).pkl"
 with open(pkl_filename, 'rb') as file:
     pickle_model = pickle.load(file)
 
