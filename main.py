@@ -189,7 +189,7 @@ with open(pkl_filename, 'rb') as file:
 if st.button('Make Prediction'):
     estimate_rent = pickle_model.predict(inp)[0]
     print(estimate_rent)
-    st.write(f"Your estimated rent is: Rs {(estimate_rent}")
+    st.write(f"Your estimated rent is: Rs {estimate_rent}")
 
 
 
