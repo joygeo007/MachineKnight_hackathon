@@ -40,3 +40,9 @@ The model has been trained using the train data and makes predictions for the te
 10. We first tried to postrun the Decision Tree. Then we used RandomizedSearchCV, for a specific range of parameters, to find the best optimal score
 11. We did the same thing with Random Forest Regressor. Then we got a specific range of parameters, which is giving us the best possible score for a model till now.
 12. We used GridSearchCV on the range of the specific parameters and found out that the best suitable parameters that gave us the best possible model score
+
+
+WEBAPP LINK :
+https://joygeo007-machineknight-hackathon-main-2agjg1.streamlitapp.com/
+
+
