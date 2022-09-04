@@ -16,7 +16,6 @@ with dataset:
     st.header("Housing Dataset")
 
     housing_data = pd.read_csv('train.csv')
-    housing_data.drop('id',axis=1,inplace=True)
     if st.checkbox('Show Training Dataframe'):
         housing_data
      
