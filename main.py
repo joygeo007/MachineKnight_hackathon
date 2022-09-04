@@ -1,13 +1,14 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import pickle
 
 header = st.container()
 dataset = st.container()
 features = st.container()
 
 with header:
-    st.title("Machineknight Hackathon")
+    st.title("Machineknight Hackathon!")
     st.text("In this project we will predict the rent of properties")
 
 with dataset:
@@ -48,9 +49,6 @@ with features:
     PB_sel = sel_col.checkbox("PB")
     stp_sel = sel_col.checkbox("STP")
     vp_sel = sel_col.checkbox("VP")
-
-
-    #{"LIFT":true,"GYM":false,"INTERNET":false,"AC":false,"CLUB":false,"INTERCOM":false,"POOL":false,"CPA":false,"FS":true,"SERVANT":false,"SECURITY":true,"SC":false,"GP":false,"PARK":false,"RWH":false,"STP":false,"HK":false,"PB":true,"VP":false}
     swimpool_sel = sel_col.checkbox("Swimming pool")
     nego_sel = sel_col.selectbox("Is the price negotiable",options=["Yes","No"], index = 0)
     furnish_sel = sel_col.selectbox("Furnishing",options=["Fully furnished","Semi furnished","Not furnished"], index = 0)
@@ -66,6 +64,16 @@ with features:
     buildingtype_sel = sel_col.selectbox("Building_type",options=["IF","AP","IH","GC"], index = 0)
     balconies_sel = sel_col.slider("balconies",min_value=0,max_value=9,value=0,step=1)
 
+pkl_filename = "pickle.pkl"
+with open(pkl_filename,'wb') as file:
+    pickle.dump(model,file)
+
+with open(pkl_filename,'rb') as file:
+    pickle_model = pickle.load(file)
+
+score = pickle_model.score(Xtest, Ytest)
+print("Test score: {0:.2f}%".format(100*score))
+Ypredict = pickle_model.predict(Xtest)
 
 
 
