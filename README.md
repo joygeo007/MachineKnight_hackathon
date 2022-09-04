@@ -1,7 +1,9 @@
 # MachineKnight_hackathon
 
 ## Objective and Dataset Info
-
+The dataset consists of housing properties located in Bengaluru and Chennai. 
+The objective is to create an ML model that can predict the rent of a house based on the given properties. 
+The model has been trained using the train data and makes predictions for the test data. Train.csv has dimensions: 20500 rows X 25 columns, whereas, test.csv has dimensions: 4500 rows X 24 columns
 
 ## Data Cleaning 
 1. No null values were found in the dataset
