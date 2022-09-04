@@ -1,7 +1,6 @@
 # MachineKnight_hackathon
 
-# Objective and Dataset Info
-
+## Objective and Dataset Info
 
 
 ## Data Cleaning 
