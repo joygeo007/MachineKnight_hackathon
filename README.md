@@ -19,7 +19,7 @@
 4. We started with the linear regression model initially, which was followed by Ridge and Lasso
 5. After this, we used Gradient Boosting Regressor and Support Vector Regressor
 6. This was followed by Random Forest Regressor and Decision Tree
-7. For calculating the optimal score of a specific model, 
+7. For finding the best model, we calculated a particular model's root mean square error (RMSE) and R2 Score
 8. We found out that decision tree regressor and random forest regressor were giving the most optimal score
 9. We also deduced that decision tree regressor was getting overfitted. 
 10. We first tried to postrun the Decision Tree. Then we used RandomizedSearchCV, for a specific range of parameters, to find the best optimal score
