@@ -1,5 +1,9 @@
 # MachineKnight_hackathon
 
+## WEBAPP LINK :
+https://joygeo007-machineknight-hackathon-main-2agjg1.streamlitapp.com/
+
+
 ## Objective and Dataset Info
 The dataset consists of housing properties located in Bengaluru and Chennai. 
 The objective is to create an ML model that can predict the rent of a house based on the given properties. 
@@ -41,8 +45,5 @@ The model has been trained using the train data and makes predictions for the te
 11. We did the same thing with Random Forest Regressor. Then we got a specific range of parameters, which is giving us the best possible score for a model till now.
 12. We used GridSearchCV on the range of the specific parameters and found out that the best suitable parameters that gave us the best possible model score
 
-
-## WEBAPP LINK :
-https://joygeo007-machineknight-hackathon-main-2agjg1.streamlitapp.com/
 
 
